@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Blueberry Muffin Recipe</title>
+  </head>
+
+  <body>
+    <!--  Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">YUM.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Recipes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search 
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Header  -->
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipe</a></li>
+        <li><a href="#">Blueberry Coffee Cake Muffin</a></li>
+      </ul>
+      <div class="row recipe-header">
+        <div class="col-lg-6 col-xl-6 d-flex justify-content-center">
+          <img
+            src="https://images.unsplash.com/photo-1587778306628-482a710ba9cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+            class="img-fluid rounded"
+            style="height: 600px"
+          />
+        </div>
+        <div class="col-lg-6 col-xl-5">
+          <h1>BLUEBERRY COFFEE CAKE MUFFINS</h1>
+          <p>
+            Crispy muffin top and soft interior - the perfect muffin to pair
+            with your morning coffee or eat all by itself.
+          </p>
+          <div class="container-fluid gx-0">
+            <div class="row icon-wrap">
+              <div class="col-lg-3">
+                <!-- Plate icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 172 172"
+                  style="fill: #000000"
+                >
+                  <g
+                    fill="none"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#3b3b39">
+                      <path
+                        d="M21.5,21.5c-11.85456,0 -21.5,12.05613 -21.5,26.875c-0.32401,9.27035 3.90627,18.11316 11.32739,23.67835c0.8462,0.52687 1.34657,1.46556 1.31226,2.46179l-3.90002,62.40039c-0.27507,4.73752 2.09609,9.23776 6.15918,11.68952c4.06309,2.45175 9.1498,2.45175 13.21288,0c4.06309,-2.45175 6.43426,-6.95199 6.15918,-11.68952l-0.85559,-13.65271c11.1377,15.74976 28.74671,25.68007 47.98715,27.06158c19.24044,1.38151 38.08754,-5.93118 51.36112,-19.92816l-0.40942,6.51929c-0.27507,4.73752 2.0961,9.23776 6.15918,11.68951c4.06309,2.45175 9.1498,2.45175 13.21288,0c4.06309,-2.45175 6.43426,-6.95199 6.15918,-11.68951l-4.34619,-69.56006c-0.04643,-0.7414 0.21608,-1.46895 0.72521,-2.00989c0.50912,-0.54094 1.21944,-0.84703 1.96229,-0.84558h2.33582c7.41764,-0.00889 13.42861,-6.01986 13.4375,-13.4375v-21.5c0,-4.4528 -3.6097,-8.0625 -8.0625,-8.0625h-5.375c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v22.84375c0,0.74213 -0.60162,1.34375 -1.34375,1.34375c-0.74213,0 -1.34375,-0.60162 -1.34375,-1.34375v-17.46875c0,-4.4528 -3.6097,-8.0625 -8.0625,-8.0625c-4.4528,0 -8.0625,3.6097 -8.0625,8.0625v17.46875c0,0.74213 -0.60162,1.34375 -1.34375,1.34375c-0.74213,0 -1.34375,-0.60162 -1.34375,-1.34375v-22.84375c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-5.375c-4.4528,0 -8.0625,3.6097 -8.0625,8.0625v0.58264c-24.70804,-14.2757 -55.86246,-10.60243 -76.57276,9.02832c-3.01537,-10.29581 -10.91074,-17.67346 -20.17724,-17.67346zM21.5,26.875c8.89294,0 16.125,9.64544 16.125,21.5c0.32975,7.47803 -3.00617,14.64742 -8.93909,19.21143c-2.44284,1.5805 -3.85117,4.34907 -3.69006,7.25415l3.90002,62.41089c0.13782,2.04348 -0.58543,4.05146 -1.99463,5.53772c-1.42495,1.44665 -3.37066,2.26122 -5.40125,2.26122c-2.03058,0 -3.9763,-0.81457 -5.40125,-2.26122c-1.4092,-1.48626 -2.13245,-3.49424 -1.99463,-5.53772l3.90002,-62.40039c0.16472,-2.90598 -1.24185,-5.67705 -3.68481,-7.2594c-5.93644,-4.56397 -9.27459,-11.73589 -8.94434,-19.21668c0,-11.85456 7.23206,-21.5 16.125,-21.5zM126.3125,26.875h2.6875v20.15625c0,3.71066 3.00809,6.71875 6.71875,6.71875c3.71066,0 6.71875,-3.00809 6.71875,-6.71875v-17.46875c0,-1.48427 1.20323,-2.6875 2.6875,-2.6875c1.48427,0 2.6875,1.20323 2.6875,2.6875v17.46875c0,3.71066 3.00809,6.71875 6.71875,6.71875c3.71066,0 6.71875,-3.00809 6.71875,-6.71875v-20.15625h2.6875c1.48427,0 2.6875,1.20323 2.6875,2.6875v21.5c0,4.4528 -3.6097,8.0625 -8.0625,8.0625h-2.34107c-2.22581,0 -4.3526,0.92015 -5.87652,2.54248c-1.52391,1.62232 -2.30935,3.80247 -2.17024,6.02393l4.34619,69.56006c0.13782,2.04348 -0.58543,4.05146 -1.99463,5.53772c-1.42495,1.44665 -3.37066,2.26122 -5.40125,2.26122c-2.03058,0 -3.9763,-0.81457 -5.40125,-2.26122c-1.4092,-1.48626 -2.13245,-3.49424 -1.99463,-5.53772l4.34619,-69.56006c0.13911,-2.22146 -0.64633,-4.4016 -2.17024,-6.02393c-1.52391,-1.62232 -3.6507,-2.54248 -5.87652,-2.54248h-2.34107c-4.4528,0 -8.0625,-3.6097 -8.0625,-8.0625v-21.5c0,-1.48427 1.20323,-2.6875 2.6875,-2.6875zM84.89771,26.8855c11.82654,-0.21817 23.44598,3.121 33.35229,9.58472v14.59229c0.00889,7.41764 6.01986,13.42861 13.4375,13.4375h2.34107c0.74285,-0.00145 1.45317,0.30463 1.96229,0.84558c0.50912,0.54094 0.77164,1.26849 0.72521,2.00989l-3.38562,54.07544c-11.11351,14.97255 -28.68421,23.76862 -47.33044,23.69409c-22.72776,-0.07409 -43.42479,-13.09861 -53.32483,-33.55701l-2.30432,-37.05286c-0.03432,-0.99623 0.46605,-1.93492 1.31226,-2.46179c7.41717,-5.56744 11.64336,-14.40989 11.3169,-23.67835c0,-0.94869 -0.04548,-1.88373 -0.12073,-2.80823c10.906,-11.64962 26.06322,-18.38848 42.01843,-18.68127zM87.3385,43.07349c-19.07572,-0.54788 -36.21978,11.57147 -42.06652,29.73734c-5.84674,18.16587 1.00981,38.00989 16.82399,48.69143c15.81417,10.68154 36.78309,9.63199 51.45162,-2.57528c14.66853,-12.20728 19.50929,-32.63677 11.87782,-50.12802c-0.28454,-0.65502 -0.81809,-1.16986 -1.48286,-1.43084c-0.66476,-0.26098 -1.40606,-0.24664 -2.06024,0.03985c-0.65408,0.28552 -1.16774,0.81949 -1.42769,1.48415c-0.25996,0.66466 -0.24486,1.40542 0.04195,2.05894c7.70246,17.63152 0.87796,38.23385 -15.82719,47.78038c-16.70515,9.54653 -37.9199,4.96784 -49.20068,-10.61877c-11.28078,-15.58661 -9.00057,-37.16972 5.28819,-50.05497c14.28876,-12.88525 35.99194,-12.92976 50.33343,-0.10323c1.10595,0.98999 2.80505,0.89599 3.79504,-0.20996c0.98999,-1.10595 0.89599,-2.80505 -0.20996,-3.79504c-7.54534,-6.73446 -17.22745,-10.58648 -27.33691,-10.87598z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                <h6>MAKES</h6>
+                <p id="icon-text">16 muffins</p>
+              </div>
+              <div class="col-lg-3">
+                <!-- Whisk icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="60" height="64"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b3b39"><path d="M155.17359,0.00678c-4.53919,0.11419 -8.71796,2.03764 -11.75836,5.41348c-54.78396,60.76877 -51.67326,56.67351 -52.61393,59.89448l-57.21521,16.11984c-33.71313,9.54194 -44.89338,51.75998 -20.32608,76.75515c0.177,0.22589 0.32474,0.37434 0.55277,0.55277c24.93736,24.53019 67.19572,13.45021 76.7555,-20.32644l11.86113,-41.9686c0.48247,-1.70648 -0.51066,-3.48147 -2.21749,-3.96394c-1.70469,-0.4814 -3.48147,0.50995 -3.96394,2.21749l-11.86078,41.96717c-6.76382,23.8982 -34.0111,36.06587 -56.39552,24.51163c26.81013,-0.26978 46.37718,-19.94496 56.73453,-44.41627c0.69158,-1.63332 -0.07244,-3.51787 -1.70577,-4.20946c-1.63297,-0.69087 -3.51787,0.07208 -4.20946,1.70577c-10.48582,24.77392 -30.09426,42.98849 -56.74345,40.21787l68.70236,-68.70201c1.25434,-1.25434 1.25434,-3.28806 0,-4.5424c-1.2547,-1.25399 -3.28806,-1.25399 -4.54205,0l-68.70236,68.70165c-2.94762,-28.35317 18.08289,-48.6689 44.50762,-58.44208c1.66366,-0.61557 2.51333,-2.46265 1.89811,-4.12631c-0.61522,-1.66366 -2.46194,-2.51404 -4.12631,-1.89811c-26.5168,9.80744 -48.69495,30.09034 -48.98186,58.54164c-11.53711,-22.35266 0.57596,-49.61921 24.50878,-56.39302l55.73427,-15.70267c0.96565,2.53046 2.22891,3.50324 5.39814,6.67247c3.89614,3.8965 10.15073,4.05922 14.24564,0.37113l55.87273,-50.37003c11.2452,-10.12896 3.77873,-28.99801 -11.409,-28.5812zM156.78836,19.75654l-3.56855,3.56855c-1.25506,1.25434 -3.2877,1.25399 -4.5424,0c-1.25434,-1.25434 -1.25434,-3.28806 0,-4.5424l3.56855,-3.56855c1.2547,-1.25399 3.2877,-1.25399 4.5424,0c1.25399,1.25434 1.25399,3.28842 0,4.5424z"></path></g></g></svg>
+                    </g>
+                  </g>
+                </svg>
+                <h6>PREP TIME</h6>
+                <p id="icon-text">12 min.</p>
+              </div>
+              <div class="col-lg-3">
+                <!-- Clock icon -->
+                <img
+                  src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/000000/external-time-user-interface-kmg-design-detailed-outline-kmg-design.png"
+                />
+                <h6>COOK TIME</h6>
+                <p id="icon-text">25 min.</p>
+              </div>
+              <div class="col-lg-3">
+                <!-- Chef hat icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="64"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#3b3b39"><path d="M86,6.88c-12.59094,0 -23.5425,6.32906 -30.4225,15.8025c-3.48031,-1.06156 -7.01437,-2.0425 -10.8575,-2.0425c-20.855,0 -37.84,16.985 -37.84,37.84c0,15.96375 10.05125,29.38781 24.08,34.9375v39.6675c-0.20156,0.67188 -0.20156,1.37063 0,2.0425v26.5525c0,1.89469 1.54531,3.44 3.44,3.44h103.2c1.89469,0 3.44,-1.54531 3.44,-3.44v-26.875c0.09406,-0.45687 0.09406,-0.94062 0,-1.3975v-39.99c14.02875,-5.54969 24.08,-18.97375 24.08,-34.9375c0,-20.855 -16.985,-37.84 -37.84,-37.84c-3.84312,0 -7.37719,0.98094 -10.8575,2.0425c-6.88,-9.47344 -17.83156,-15.8025 -30.4225,-15.8025zM86,13.76c11.03219,0 20.62656,5.73781 26.1225,14.405c0.87344,1.42438 2.64719,2.01563 4.1925,1.3975c3.44,-1.31687 7.095,-2.0425 10.965,-2.0425c17.14625,0 30.96,13.81375 30.96,30.96c0,13.89438 -9.16437,25.61188 -21.715,29.5625c-1.3975,0.45688 -2.35156,1.76031 -2.365,3.225v39.4525h-96.32v-39.4525c-0.01344,-1.46469 -0.9675,-2.76812 -2.365,-3.225c-12.55062,-3.95062 -21.715,-15.66812 -21.715,-29.5625c0,-17.14625 13.81375,-30.96 30.96,-30.96c3.87,0 7.525,0.72563 10.965,2.0425c1.54531,0.61813 3.31906,0.02688 4.1925,-1.3975c5.49594,-8.66719 15.09031,-14.405 26.1225,-14.405zM61.5975,92.7725c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v10.32c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-10.32c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719zM85.6775,92.7725c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v13.76c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-13.76c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719zM109.7575,92.7725c-0.14781,0.02688 -0.29562,0.06719 -0.43,0.1075c-1.59906,0.36281 -2.72781,1.80063 -2.6875,3.44v10.32c-0.01344,1.23625 0.63156,2.39188 1.70656,3.02344c1.075,0.61813 2.39187,0.61813 3.46687,0c1.075,-0.63156 1.72,-1.78719 1.70656,-3.02344v-10.32c0.04031,-0.99437 -0.36281,-1.94844 -1.075,-2.62031c-0.72562,-0.68531 -1.70656,-1.02125 -2.6875,-0.92719zM37.84,137.6h96.32v20.64h-96.32z"></path></g></g></svg>
+                <h6>DIFFICULTY</h6>
+                <p id="icon-text">Easy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header ends -->
+
+    <!-- Ingredients/direction section -->
+    <div id="steps" class="container-fluid mt-5 pb-5">
+      <div class="row pt-5 d-flex justify-content-center">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 ps-5" style="width: 40vw">
+          <h2>INGREDIENTS</h2>
+          <div class="ingredients">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                12 tablespoons (1 1/2 sticks) unsalted butter, at room
+                temperature
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                1 1/2 cups sugar
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                3 extra-large eggs, at room temperature
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                1 1/2 teaspoons pure vanilla extract
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                8 ounces (about 1 cup) sour cream
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                1/4 cup milk
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                2 1/2 cups all-purpose flour
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                2 teaspoons baking powder
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                1/2 teaspoon baking soda
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                1/2 teaspoon kosher salt
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                2 half-pints fresh blueberries, picked through for stems
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 pe-5" style="width: 40vw">
+          <h2>DIRECTIONS</h2>
+          <p>
+            <b>1.</b> Preheat the oven to 350 degrees F. Place 16 liners in muffin
+            pans.
+          </p>
+          <p>
+            <b>2.</b> In the bowl of an electric mixer fitted with the paddle
+            attachment, cream the butter and sugar until light and fluffy, about
+            5 minutes. With the mixer on low speed, add the eggs 1 at a time,
+            then add the vanilla, sour cream, and milk. In a separate bowl, sift
+            together the flour, baking powder, baking soda, and salt. With the
+            mixer on low speed add the flour mixture to the batter and beat
+            until just mixed. Fold in the blueberries with a spatula and be sure
+            the batter is completely mixed.
+          </p>
+          <p>
+           <b>3.</b>  Scoop the batter into the prepared muffin pans, filling each cup
+            just over the top, and bake for 25 to 30 minutes, until the muffins
+            are lightly browned on top and a cake tester comes out clean.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ingredient/direction ends -->
+
+    <!-- More recipes -->
+    <section
+      class="m-5 d-flex flex-column align-items-center"
+      style="width: 100%"
+    >
+      <h2 class="mb-5" >MORE RECIPES</h2>
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-lg-4 mb-5 ps-5">
+            <div class="card img-hover-zoom" style="width: 18rem">
+              <a href="#"><img
+                style="height: 15rem"
+                src="https://images.unsplash.com/photo-1598795164852-d2b5472d8bbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                class="card-img-top "
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <a href="#"><p class="card-text">LEMON BARS</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 ps-5">
+            <div class="card img-hover-zoom" style="width: 18rem">
+              <a href="#"> <img
+                style="height: 15rem"
+                src="https://images.unsplash.com/photo-1611385729502-2b39ea6a357d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80"
+                class="card-img-top"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <a href="#"><p class="card-text">TIRAMISU</p></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5 ps-5">
+            <div class="card img-hover-zoom" style="width: 18rem">
+             <a href="#"> <img
+                style="height: 15rem"
+                src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                class="card-img-top"
+                alt="..."
+              /></a>
+              <div class="card-body">
+                <a href="#"><p class="card-text">CHOCOLATE CHIP COOKIE</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- More recipe section ends -->
+
+    <!-- Footer -->
+    <footer class="d-flex justify-content-center align-items-end">
+      <p>Check out the full recipe from <a href="https://www.foodnetwork.com/recipes/ina-garten/blueberry-coffee-cake-muffins-recipe-1917173 " target="_blank">Ina Garten</a>  </p>
+    </footer>
+
+    <!-- Footer ends -->
+  </body>
+</html>
