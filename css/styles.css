@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: open sans;
+  color: #3b3b39;
+  line-height: 1.6;
+}
+
+/* navbar */
+.logo {
+  font-family: anton;
+  font-size: 2rem;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+  margin: 7% 0% 0% 6%;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #3b3b39;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 5px;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a:hover {
+  font-weight: bold;
+}
+
+/* header */
+.recipe-header {
+  margin-top: 1%;
+}
+
+h1 {
+  font-family: anton;
+  font-size: 5.96rem;
+}
+
+.recipe-header p {
+  font-size: 1.25rem;
+}
+
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h6 {
+  margin-top: 3px;
+  font-size: 1.25rem;
+  font-family: anton;
+}
+
+#icon-text {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ingredients/directions */
+.ingredients {
+  width: 60%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: anton;
+}
+
+#steps {
+  background-color: #f3e8d6;
+}
+
+article {
+  width: 70%;
+}
+
+/* more recipes  */
+.card-text {
+  font-family: anton;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  color: #3b3b39;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.75s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+/* footer */
+
+footer {
+  width: 100%;
+  height: 15vh;
+  background-image: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #3b3b39;
+}
